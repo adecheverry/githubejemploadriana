@@ -1,0 +1,48 @@
+body  {
+	background-color: #eee;
+}	
+.caja  {
+	background-color: #fff;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #ccc;
+	border-radius: 2px;
+	border-top: solid 0px;
+}
+.primario {
+	background-color: #0090ff;
+	color: #fff;
+	padding: 5px;
+	border: 0px;
+}	
+.secundario {
+	background-color: #aaa;
+	color: #fff;
+	padding: 5px;
+	border: 0px;
+}
+.contenido {
+  padding: 10px;
+}
+
+.header {
+  padding: 10px;
+  border-bottom: solid 1px #eee;
+}
+
+.footer {
+  padding: 10px;
+  border-top: solid 1px #eee;
+}
+p {
+	font-family: "Times New Roman";
+	color: #222fff;
+	font-family: "Times New Roman";
+	font-weight: 500;
+	font-style: oblique;
+	text-align: center;
+	text-indent: 40px;
+	line-height: 1.7;
+	word-spacing: 10px;
+	text-shadow: 5px 2px 2px;
+}	
