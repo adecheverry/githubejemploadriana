@@ -45,4 +45,57 @@ p {
 	line-height: 1.7;
 	word-spacing: 10px;
 	text-shadow: 5px 2px 2px;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: hotpink;
+}
+a:link {
+	color: pink;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: gray;
+}
+a:active {
+	color: black;
+}
+ul {
+	background-color: #fff;
+	list-style-type: none;
+	border: solid 1px #ddd;
+	border-radius: 4px;
+	padding-left: 0px;
 }	
+li {
+	border-bottom: solid 1px #ddd;
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+	background-color:#fff;
+	border-collapse: collapse;
+}	
+tr:nth-clild(even) {
+	background-color: #f2f2f2;
+}
+
+table th {
+	color:white;
+	background-color: #4CAF50;
+	text-align: left;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
