@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+	/*
+			function validarPrimo (numeroValidarPrimo) {
+				for (let i=2; i< numeroValidarPrimo; i++)
+				if ((numeroValidarPrimo % i) == 0)	{
+					return "no primo";  
+			}	  
+					return "primo";		
+	}
+		const numeroMaximo = 100;
+		let j = 0; 
+		let k = 1;
+		
+		for ( k=1; j<=numeroMaximo; k++ ){ 
+			let resultado = validarPrimo(k);
+			if(resultado == "primo") {
+				console.log(k);
+				j++;
+			}			
+			
+		}
+	*/
+	
+	/* funcion que nos permite sumar los valores ubicados en los indices pares  dentro de una array
+	
+			
+			function sumarPares (){
+				let datos = [23,70,44,56,89,98,6,78,56,9];
+				let resultado = 0
+				for (let i= 0; i<datos.length; i++){
+					if(i % 2 == 0){
+				resultado += datos[i]
+					}
+				}
+				console.log(resultado)
+			}
+		
+			sumarPares()
+    */
+			/**
+			   Funcion que nos permite saber cuantos dias de la semana terminan con la letra 's'
+			*/
+			function diasSemana(dias){
+			    //Variable que permite acumular los dias que cumplen con la condicion o un contador
+				let resultado = 0;
+				//Ciclo que va desde 0 hasta 6 (cantidad elementos en el arreglo)
+				//Sirve para saber la cantidad de elementos length
+				for (let i= 0; i< dias.length; i++){
+				    //Condicion
+					let diaSemana = dias[i];
+					console.log("El dia de la semana es ... " + diaSemana);
+					//Saber cuantas letras tiene una cadena
+				    cantidadLetras = diaSemana.length;
+					console.log("Cantidad de letras ... " + cantidadLetras);
+					
+					for(let j=0; j< cantidadLetras; j++){
+						console.log(diaSemana.charAt(j));
+					}
+					
+					
+					ultimaLetra = diaSemana.charAt(cantidadLetras - 1);
+					console.log("Ultima letra de la palabra del dia de la semana es ... " + ultimaLetra);
+					console.log("Dia a evaluar " + diaSemana + " y tiene " + cantidadLetras + " letras");
+					
+					if( (dias[i].charAt(cantidadLetras - 1)) == 's'){
+						resultado ++;
+					}
+				}
+				
+				//Uncaught ReferenceError: i is not defined
+				//La i solo vive desde la linea inicial del for (50 - 63)
+				//Scope
+				//console.log(i);
+				//console.log(diaSemana);
+				console.log("La cantidad de dias de la semana que terminan con la letra 's' es .... " + resultado);
+			}
+			//Arreglo de dias de la semana
+		    let diasEvalar = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
+			//let diasEvalar = ['lunes'];
+			//Invoca a la funcion correspondiente
+			diasSemana(diasEvalar);
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+	
