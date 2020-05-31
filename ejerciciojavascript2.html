@@ -2,6 +2,7 @@
 <html>
 <head> 
 	<script type="text/javascript">
+	/*
 		let diasemana=3
 		switch(4){
 		case 1:{
@@ -82,16 +83,37 @@
 			const resultado5 = validarPares(5)			
 			console.log(resultado5)
 		
+
+*/
 		function validarPrimo (numeroValidarPrimo) {
-				if ((numeroValidarPrimo % 3) == 0) {
-					return "primo"; 
-				for (let i=3; i>= 3; i++) 
-					return "no primo"
-			}	
+			for (let i=2; i< numeroValidarPrimo; i++)
+				if ((numeroValidarPrimo % i) == 0)	{
+					return "no primo";  
+			}	  
+					return "primo"							
+				
+	}	
+		const numeroMaximo = 100
+		let j = 0;
+		let i = true;
+		let k = 1;
+		while (i== true) {
+			let resultado = validarPrimo(k);
+			if(resultado == "primo") {
+				console.log(k);
+				j++	
+			}
+			if(j==numeroMaximo){
+				i = false;
+			}
+			k++;
 		}
-			console.log (validarPrimo(11))
+			/*
+			console.log (validarPrimo(11))			
 			const resultado6 = validarPrimo(6)			
 			console.log(resultado6)
+			*/
+			
 			
 	</script>
 	</head>
